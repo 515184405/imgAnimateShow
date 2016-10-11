@@ -1,5 +1,6 @@
 # imgAnimateShow
 图片的动态显示效果
+兼容ie9及以上版本
 
 本插件基于jquery框架实现
 
