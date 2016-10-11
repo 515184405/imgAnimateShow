@@ -52,7 +52,7 @@ img{
 	 filter:alpha(opacity=0);
 }
 img{
-	background: url('/static/img/ajax-loader.gif') no-repeat center center  ;
+	background: url('static/img/ajax-loader.gif') no-repeat center center  ;
 }
 .btn_close_js{
 	position:fixed;
