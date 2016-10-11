@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>冯宇的个人网站</title>
+	<meta http-equiv=X-UA-Compatible content=IE=EmulateIE7>
+	<script src="../seajs/jquery.min.js"></script>
+	<script src="static/js/previewImg2.js"></script>
+</head>
+<body>
+	<!-- img内层嵌套可以多层 -->
+	<h1>注意：样式已加载到框架中，目录结构不能改变或在框架中去掉加载样式部分，之后在head中引用</h1>
+		<div class="img_box1">
+			<div><img data-src="static/img/1.jpg" src="static/img/1.min.jpg" alt=""></div>
+			<div><img data-src="static/img/2.jpg" src="static/img/2.min.jpg" alt=""></div>
+			<div><img data-src="static/img/3.jpg" src="static/img/3.min.jpg" alt=""></div>
+			<div><img data-src="static/img/4.jpg" src="static/img/4.min.jpg" alt=""></div>
+			<div><img data-src="static/img/5.jpg" src="static/img/5.min.jpg" alt=""></div>
+			<div><img data-src="static/img/6.jpeg" src="static/img/6.min.jpg" alt=""></div>
+		</div>
+		<div class="img_box">
+
+			<div>
+				<div>
+					<div>
+						<div>
+							<div>
+								<img data-src="static/img/500.jpg" src="static/img/500_min.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div>
+					<div>
+						<div>
+							<img data-src="static/img/big.jpg" src="static/img/big_min.jpg" alt="">
+						</div>
+						</divjp
+					</div>
+				</div>
+			</div>
+	<script>
+		$(function(){
+			$('.img_box img').imgShow({
+				// 当前所有小图的公共父亲且不能为body,默认是当前图片的祖先元素body的儿子
+				nodeParent : $(".img_box"),
+				//true 是点击图片src的地址，false是data-src的地址，默认为true;
+				isBigImg : false,//img上必须得有data-src属性
+				//点击放大图片的动画时长 默认是500
+				duration : 500
+			});
+			$('.img_box1 img').imgShow({
+				// 当前所有小图的公共父亲且不能为body,默认是当前图片的祖先元素body的儿子
+				nodeParent : $(".img_box1"),
+				//true 是点击图片src的地址，false是data-src的地址，默认为true;
+				isBigImg : false,//img上必须得有data-src属性
+				//点击放大图片的动画时长 默认是500
+				duration : 500
+			});
+		})
+	</script>
+
+
+</body>
+</html>
