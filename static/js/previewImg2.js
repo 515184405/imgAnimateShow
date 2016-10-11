@@ -208,7 +208,7 @@
 										"left" : bigL,
 										"top" : bigT
 									}).fadeIn();
-									if($(this).css("z-index") == 0){
+									if($(this).css("z-index") == 0 || $(this).css("z-index") == "auto"){
 										$(this).css({
 											"z-index" : 0,
 											"opacity" :0
