@@ -285,7 +285,7 @@
 
 				$(".img_bg_js,.btn_close_js").fadeIn(param.duration,function(){
 					$(".img_bg_js").css({
-						"background": "#000 url('/static/img/ajax-loader.gif') no-repeat center center"
+						"background": "#000 url('static/img/ajax-loader.gif') no-repeat center center"
 					})
 				});
 				
@@ -297,7 +297,7 @@
 					"filter" : "alpha(opacity=80)"
 				},param.duration,function(){
 					$(".img_bg_js").css({
-						"background": "#000 url('/static/img/ajax-loader.gif') no-repeat center center"
+						"background": "#000 url('static/img/ajax-loader.gif') no-repeat center center"
 					})
 				})
 				img_bg = 1;
