@@ -98,6 +98,8 @@
 				$("body").append(imgLengthDom);
 				iscreate_current_position = 1;
 
+			}else{
+				$(".imgLengthNum_js").show();
 			}
 		};
 		// 创建imgbox方法
@@ -285,7 +287,7 @@
 
 				$(".img_bg_js,.btn_close_js").fadeIn(param.duration,function(){
 					$(".img_bg_js").css({
-						"background": "#000 url('static/img/ajax-loader.gif') no-repeat center center"
+						"background": "#000 url('/static/img/ajax-loader.gif') no-repeat center center"
 					})
 				});
 				
@@ -297,7 +299,7 @@
 					"filter" : "alpha(opacity=80)"
 				},param.duration,function(){
 					$(".img_bg_js").css({
-						"background": "#000 url('static/img/ajax-loader.gif') no-repeat center center"
+						"background": "#000 url('/static/img/ajax-loader.gif') no-repeat center center"
 					})
 				})
 				img_bg = 1;
@@ -317,7 +319,7 @@
 					"opacity" : 0
 				}).fadeOut(100);
 				$(".btnLeft_js,.btnRight_js").fadeOut(300);
-				$('.imgLengthNum_js').fadeIn(300);	
+				$('.imgLengthNum_js').fadeOut(300);	
 			})
 		};
 
